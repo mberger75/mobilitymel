@@ -1,0 +1,64 @@
+.panel {
+  overflow-y: scroll;
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  padding: 2em;
+  background-color: #fbf8f3;
+  border-right: 1px dotted black;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.panel::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.panel-list {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .item {
+    cursor: pointer;
+    width: 100%;
+    margin: 5px 0;
+    padding: 1em;
+    border-radius: 5px;
+    opacity: 0.9;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    h1,
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    .address {
+      font-size: 1rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
+
+  .item.vlille {
+    color: #fff;
+  }
+  .item.danger {
+    background-color: rgb(224, 41, 41);
+  }
+  .item.warning {
+    background-color: rgb(238, 146, 27);
+  }
+  .item.success {
+    background-color: rgb(43, 182, 43);
+  }
+}

@@ -1,0 +1,63 @@
+.leaflet-popup-content {
+  width: 300px;
+  margin: 0 !important;
+  padding: 0;
+
+  header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px dotted rgb(155, 155, 155);
+    text-align: center;
+  }
+
+  main {
+    margin-bottom: 1.5rem;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      width: 100%;
+      padding: 0.5rem;
+      text-align: center;
+      color: white;
+      background-color: rgb(24, 163, 36);
+      border-bottom: 1px solid white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+  }
+}
+
+.leaflet-popup-content .citiz main {
+  .vehicle-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: top;
+
+    .vehicle {
+      width: 45%;
+      margin: 3px;
+      padding: 5px;
+      border: 1px dotted black;
+
+      p {
+        margin: 3px 0;
+      }
+    }
+  }
+}
+
+.leaflet-popup-content .vlille {
+  header {
+    padding: 0 2rem;
+  }
+  main {
+    padding: 0 2rem;
+  }
+}
